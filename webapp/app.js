@@ -11,6 +11,7 @@ var expressValidator = require("express-validator");
 var index = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
+var ble = require('./routes/ble');
 
 var app = express();
 
@@ -64,6 +65,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/api', api);
 app.use('/signin', index);
+app.use('/ble', ble);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

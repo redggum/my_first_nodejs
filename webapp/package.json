@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "sudo node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -12,11 +12,13 @@
     "express": "~4.14.1",
     "express-session": "*",
     "express-validator": "*",
-    "passport": "*",
+    "gentelella": "^1.3.0",
+    "mongodb": "*",
+    "mongoose": "*",
     "morgan": "~1.7.0",
+    "noble": "^1.8.0",
+    "passport": "*",
     "pug": "~2.0.0-beta10",
-    "serve-favicon": "~2.3.2",
-    "mongodb" : "*",
-    "mongoose" : "*"
+    "serve-favicon": "~2.3.2"
   }
 }
